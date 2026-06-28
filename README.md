@@ -18,7 +18,9 @@ ARShop is a modern and responsive furniture e-commerce website that combines **A
 
 > Add a screenshot or GIF of your homepage here.
 
-![ARShop Preview](preview.png)
+<img width="627" height="545" alt="Screenshot 2026-06-28 212921" src="https://github.com/user-attachments/assets/5db18d81-d6b5-4d8d-b890-d38c4d5c9eae" />
+
+
 
 ---
 
