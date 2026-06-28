@@ -1,16 +1,90 @@
-# React + Vite
+# 🌿 Eco Nest — Sustainable E-Commerce Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, responsive e-commerce landing page built with **vanilla HTML, CSS & JavaScript** — focused on eco-friendly and sustainable products. Designed as a frontend portfolio project.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🔗 Live Demo
 
-## React Compiler
+> Coming soon / [Add your GitHub Pages or Netlify link here]
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📸 Preview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+> Add a screenshot here after uploading!  
+> `![Eco Nest Preview](./assets/preview.png)`
+
+---
+
+## ✨ Features
+
+- 🏠 **Hero Section** — Full-width banner with tagline and CTA button
+- 🛍️ **Product Showcase** — Product cards with hover effects
+- 🌱 **Eco-Focused UI** — Green-themed design language with nature-inspired visuals
+- 📱 **Fully Responsive** — Works across mobile, tablet, and desktop
+- 🎨 **Smooth Animations** — CSS transitions and scroll effects
+- 🧭 **Navigation Bar** — Sticky nav with smooth scroll links
+
+---
+
+## 🛠️ Built With
+
+| Technology | Purpose |
+|---|---|
+| HTML5 | Page structure & semantic markup |
+| CSS3 | Styling, animations, responsive layout |
+| JavaScript (Vanilla) | Interactivity & DOM manipulation |
+
+No frameworks. No libraries. Pure frontend.
+
+---
+
+## 📁 Project Structure
+
+```
+eco-nest/
+├── index.html
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+└── assets/
+    └── images/
+```
+
+---
+
+## 🚀 Getting Started
+
+1. Clone the repo
+```bash
+git clone https://github.com/safiulhaquemallik324-debug/Eco-Nest-website.git
+```
+
+2. Open `index.html` in your browser — that's it!
+
+No install, no build step needed.
+
+---
+
+## 📌 What I Learned
+
+- Building a multi-section landing page from scratch
+- Writing clean, reusable CSS without any framework
+- Implementing responsive design with media queries
+- DOM manipulation and scroll-based interactions in vanilla JS
+
+---
+
+## 🙋 Author
+
+**Safiul Haque Mallik**  
+Frontend Developer  
+[GitHub](https://github.com/safiulhaquemallik324-debug)
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
