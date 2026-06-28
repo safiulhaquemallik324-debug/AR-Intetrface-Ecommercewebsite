@@ -13,7 +13,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp, faXTwitter, faFacebookF } from "@fortawesome/free-brands-svg-icons";
 import { useWishlist } from "../hooks/useWishlist";
-import "../styles/ProductDetails.css";
+import "../styles/productDetails.css";
 import { allProducts } from "../data/allProducts";
 import { products as oldProducts } from "../data/product";
 
