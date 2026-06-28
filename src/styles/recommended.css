@@ -1,0 +1,413 @@
+/* ==========================
+   Recommended Products
+========================== */
+
+.recommend-section {
+    padding: 80px 60px;
+    background: #fff;
+}
+
+.recommend-section .section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.recommend-section .section-head h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #111;
+}
+
+.recommend-section .section-head a {
+    color: #2F80FF;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* ==========================
+   Wrapper + Arrows
+========================== */
+
+.recommend-wrapper{
+    position:relative;
+}
+
+.recommend-arrow{
+    position:absolute;
+
+    top:50%;
+    transform:translateY(-50%);
+
+    width:46px;
+    height:46px;
+
+    border:none;
+    border-radius:50%;
+
+    background:#2f80ff;
+    color:#fff;
+
+    font-size:24px;
+    cursor:pointer;
+
+    z-index:100;
+}
+
+.recommend-arrow.left{
+    left:-24px;
+}
+
+.recommend-arrow.right{
+    right:-24px;
+}
+
+/* ==========================
+   Product Grid
+========================== */
+
+/* ==========================
+   Product Grid
+========================== */
+
+.recommend-grid{
+    display:grid;
+
+    grid-auto-flow:column;
+    grid-auto-columns:310px;
+
+    gap:32px;
+
+    overflow-x:auto;
+    overflow-y:hidden;
+
+    scroll-behavior:smooth;
+    scrollbar-width:none;
+
+    padding:24px 0 40px;
+}
+
+.recommend-grid::-webkit-scrollbar{
+    display:none;
+}
+
+
+/* ==========================
+   Card
+========================== */
+
+.recommend-card{
+    width:310px;
+    height:auto;
+
+    background:#fff;
+
+    border-radius:18px;
+    border:1px solid #e5e5e5;
+
+    overflow:hidden;
+
+    transition:.25s ease;
+}
+
+.recommend-card:hover{
+    transform:translateY(-5px);
+
+    border-color:#F4C542;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+}
+
+/* ==========================
+   Image
+========================== */
+
+.recommend-img {
+    display: block;
+
+    height: 230px;
+
+    position: relative;
+
+    background: #f5f5f5;
+
+    overflow: hidden;
+
+    text-decoration: none;
+}
+
+.recommend-img img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .3s;
+}
+
+.recommend-card:hover .recommend-img img {
+    transform: scale(1.05);
+}
+
+
+/* Heart */
+
+.recommend-img .heart {
+    position: absolute;
+
+    top: 18px;
+    right: 18px;
+
+    width: 42px;
+    height: 42px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,.12);
+
+    cursor: pointer;
+
+    z-index: 5;
+}
+
+
+/* ==========================
+   Body
+========================== */
+
+.recommend-body {
+    padding: 20px;
+}
+
+.title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-row h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111;
+}
+
+.share-small {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+/* Price */
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 12px;
+}
+
+.price-row h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.price-row span {
+    color: #ff3b30;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* Rating */
+
+.rating-row {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 14px;
+}
+
+.stars {
+    color: #ffc107;
+}
+
+.rating-row p {
+    font-size: 12px;
+    color: #777;
+}
+
+
+/* See Details */
+
+.details-link {
+    display: inline-block;
+
+    margin-top: 12px;
+
+    color: #2f80ff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.details-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Buttons */
+
+.product-detail-btn-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+.add-to-cart-btn {
+    height: 44px;
+    font-family:  "Inter", sans-serif;
+    border: none;
+    border-radius: 10px;
+
+    background: #2F80FF;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.ar-btn-three{
+    height:44px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:1px solid #2F80FF;
+    border-radius:10px;
+    background:#fff;
+    color:#2F80FF;
+    text-decoration:none;
+    font-size:13px;
+    font-weight:700;
+    font-family:"Inter", sans-serif;
+    cursor:pointer;
+    transition:.3s ease;
+}
+
+.ar-btn-three:hover{
+    background:#F4C542;
+    color:#fff;
+    border:none;
+    color:#111;
+}
+
+/* ==========================
+   Recommended Responsive
+========================== */
+
+@media(max-width:1100px){
+    .recommend-section{
+      padding:60px 35px;
+    }
+  
+    .recommend-grid{
+      grid-auto-columns:290px;
+      gap:24px;
+    }
+  
+    .recommend-card{
+      width:290px;
+    }
+  }
+  
+  @media(max-width:768px){
+    .recommend-section{
+      padding:45px 20px;
+    }
+  
+    .recommend-section .section-head{
+      flex-direction:column;
+      align-items:flex-start;
+      gap:12px;
+    }
+  
+    .recommend-section .section-head h2{
+      font-size:26px;
+    }
+  
+    .recommend-arrow{
+      display:block;
+    }
+  
+    .recommend-grid{
+      grid-auto-columns:270px;
+      gap:20px;
+    }
+  
+    .recommend-card{
+      width:270px;
+    }
+  
+    .recommend-img{
+      height:205px;
+    }
+  
+    .title-row h4{
+      font-size:18px;
+    }
+  }
+  
+  @media(max-width:480px){
+    .recommend-section{
+      padding:35px 15px;
+    }
+  
+    .recommend-grid{
+      grid-auto-columns:245px;
+      gap:18px;
+    }
+  
+    .recommend-card{
+      width:245px;
+    }
+  
+    .recommend-img{
+      height:180px;
+    }
+  
+    .product-detail-btn-two{
+      grid-template-columns:1fr;
+    }
+  
+    .add-to-cart-btn,
+    .ar-btn-three{
+      width:100%;
+    }
+  }

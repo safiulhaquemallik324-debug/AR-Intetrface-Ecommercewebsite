@@ -1,0 +1,468 @@
+/* ===================================
+   ALL OFFERS PAGE
+=================================== */
+
+.all-offers-page{
+  min-height:100vh;
+  padding:60px;
+  background:#f8fafc;
+}
+
+
+/* BACK BUTTON */
+
+.all-offers-back{
+  width:55px;
+  height:55px;
+
+  border:none;
+  border-radius:50%;
+
+  background:#fff;
+
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  cursor:pointer;
+
+  margin-bottom:35px;
+
+  transition:.3s;
+}
+
+.all-offers-back:hover{
+  background:#2f80ff;
+  color:#fff;
+  transform:translateY(-3px);
+}
+
+
+/* HEADER */
+
+.all-offers-header{
+  text-align:center;
+
+  max-width:760px;
+
+  margin:0 auto 50px;
+}
+
+.all-offers-header span{
+  color:#f4b400;
+  font-weight:800;
+}
+
+.all-offers-header h1{
+  font-size:54px;
+  margin:14px 0 18px;
+  color:#111827;
+}
+
+.all-offers-header p{
+  color:#64748b;
+  line-height:1.8;
+  font-size:18px;
+}
+
+
+/* HERO */
+
+.all-offers-hero{
+
+  min-height:420px;
+
+  border-radius:34px;
+
+  overflow:hidden;
+
+  margin-bottom:50px;
+
+  background:
+  linear-gradient(
+  90deg,
+  rgba(0,0,0,.78),
+  rgba(0,0,0,.18)
+  ),
+
+url("https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1400");
+
+  background-size:cover;
+
+  background-position:center;
+
+  display:flex;
+
+  align-items:center;
+
+  padding:60px;
+}
+
+.all-offers-hero-content{
+
+  max-width:560px;
+
+  color:#fff;
+}
+
+.all-offers-hero-content span{
+
+  background:#ffcc00;
+
+  color:#111;
+
+  padding:9px 18px;
+
+  border-radius:30px;
+
+  font-weight:800;
+}
+
+.all-offers-hero-content h2{
+
+  font-size:48px;
+
+  line-height:1.12;
+
+  margin:24px 0 18px;
+}
+
+.all-offers-hero-content p{
+
+  font-size:18px;
+
+  color:rgba(255,255,255,.82);
+
+  line-height:1.7;
+
+  margin-bottom:28px;
+}
+
+.all-offers-hero-content button{
+
+  border:none;
+
+  background:#ffcc00;
+
+  color:#111;
+
+  padding:14px 24px;
+
+  border-radius:40px;
+
+  font-weight:800;
+
+  cursor:pointer;
+}
+
+
+
+/* OFFER GRID */
+
+.all-offers-grid{
+
+  display:grid;
+
+  grid-template-columns:repeat(4,1fr);
+
+  gap:28px;
+}
+
+
+/* CARD */
+
+.all-offers-card{
+
+  background:#fff;
+
+  border-radius:26px;
+
+  overflow:hidden;
+
+  box-shadow:0 14px 34px rgba(15,23,42,.08);
+
+  transition:.3s;
+}
+
+.all-offers-card:hover{
+
+  transform:translateY(-8px);
+}
+
+.all-offers-card img{
+
+  width:100%;
+
+  height:240px;
+
+  object-fit:cover;
+}
+
+.all-offers-card-body{
+
+  padding:26px;
+}
+
+.all-offers-card-body span{
+
+  display:inline-block;
+
+  color:#087047;
+
+  background:#d9fff1;
+
+  padding:7px 14px;
+
+  border-radius:20px;
+
+  font-size:13px;
+
+  font-weight:800;
+
+  margin-bottom:16px;
+}
+
+.all-offers-card-body h3{
+
+  font-size:24px;
+
+  margin-bottom:10px;
+
+  color:#111827;
+}
+
+.all-offers-card-body p{
+
+  color:#64748b;
+
+  line-height:1.6;
+
+  margin-bottom:22px;
+}
+
+.all-offers-card-body button{
+
+  border:none;
+
+  background:#ffcc00;
+
+  color:#111;
+
+  padding:14px 22px;
+
+  border-radius:40px;
+
+  font-weight:800;
+
+  cursor:pointer;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:1100px){
+
+.all-offers-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.all-offers-header h1{
+
+font-size:42px;
+
+}
+
+}
+
+
+@media(max-width:768px){
+
+.all-offers-page{
+
+padding:25px;
+
+}
+
+.all-offers-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.all-offers-hero{
+
+padding:30px;
+
+}
+
+.all-offers-hero-content h2{
+
+font-size:34px;
+
+}
+
+}
+
+
+/* ======================================================
+   OFFERS RESPONSIVE - TABLET
+====================================================== */
+
+@media (max-width: 1100px){
+
+  .all-offers-page{
+    padding:50px 35px;
+  }
+
+  .all-offers-header h1{
+    font-size:44px;
+  }
+
+  .all-offers-hero{
+    min-height:360px;
+    padding:45px;
+  }
+
+  .all-offers-hero-content h2{
+    font-size:40px;
+  }
+
+  .all-offers-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:24px;
+  }
+
+}
+
+
+/* ======================================================
+   OFFERS RESPONSIVE - MOBILE
+====================================================== */
+
+@media (max-width:768px){
+
+  .all-offers-page{
+    padding:30px 20px;
+  }
+
+  .all-offers-back{
+    width:48px;
+    height:48px;
+  }
+
+  .all-offers-header{
+    margin-bottom:35px;
+  }
+
+  .all-offers-header h1{
+    font-size:34px;
+    line-height:1.2;
+  }
+
+  .all-offers-header p{
+    font-size:15px;
+  }
+
+  .all-offers-hero{
+
+    min-height:300px;
+
+    padding:28px;
+
+    border-radius:24px;
+
+    margin-bottom:35px;
+  }
+
+  .all-offers-hero-content{
+
+    max-width:100%;
+  }
+
+  .all-offers-hero-content h2{
+
+    font-size:30px;
+
+    margin:18px 0;
+  }
+
+  .all-offers-hero-content p{
+
+    font-size:15px;
+
+    margin-bottom:20px;
+  }
+
+  .all-offers-grid{
+
+    grid-template-columns:1fr;
+
+    gap:20px;
+  }
+
+}
+
+
+/* ======================================================
+   OFFERS RESPONSIVE - SMALL PHONE
+====================================================== */
+
+@media (max-width:480px){
+
+  .all-offers-page{
+
+    padding:22px 15px;
+  }
+
+  .all-offers-header h1{
+
+    font-size:28px;
+  }
+
+  .all-offers-header p{
+
+    font-size:14px;
+  }
+
+  .all-offers-hero{
+
+    min-height:260px;
+
+    padding:22px;
+  }
+
+  .all-offers-hero-content span{
+
+    font-size:12px;
+  }
+
+  .all-offers-hero-content h2{
+
+    font-size:24px;
+  }
+
+  .all-offers-hero-content p{
+
+    font-size:14px;
+  }
+
+  .all-offers-card img{
+
+    height:200px;
+  }
+
+  .all-offers-card-body{
+
+    padding:20px;
+  }
+
+  .all-offers-card-body h3{
+
+    font-size:20px;
+  }
+
+}

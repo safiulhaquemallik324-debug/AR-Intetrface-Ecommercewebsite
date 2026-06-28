@@ -1,0 +1,556 @@
+/* ============================================
+   PRODUCT DETAILS PAGE
+   ============================================ */
+
+   .pd-page {
+    min-height: 100vh;
+    background: #fff;
+    padding: 30px 60px 60px;
+    position: relative;
+  }
+  
+  /* BACK BUTTON */
+  .pd-back {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid #e5e7eb;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 28px;
+    color: #111;
+    transition: background 0.2s;
+  }
+  
+  .pd-back:hover {
+    background: #f5f5f5;
+  }
+  
+  /* LAYOUT */
+  .pd-layout {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 60px;
+    align-items: start;
+  }
+  
+  /* ============ LEFT ============ */
+  .pd-main-img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #f3f4f6;
+  }
+  
+  .pd-main-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .pd-thumbs {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+  }
+  
+  .pd-thumb {
+    width: 80px;
+    height: 72px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid transparent;
+    background: #f3f4f6;
+    cursor: pointer;
+    padding: 0;
+    transition: border-color 0.2s;
+  }
+  
+  .pd-thumb.active {
+    border-color: #2563eb;
+  }
+  
+  .pd-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .pd-description {
+    margin-top: 32px;
+  }
+  
+  .pd-description h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #111;
+  }
+  
+  .pd-description p {
+    font-size: 15px;
+    line-height: 1.75;
+    color: #4b5563;
+  }
+  
+  /* ============ RIGHT ============ */
+  .pd-right {
+    position: sticky;
+    top: 24px;
+  }
+  
+  .pd-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 12px;
+  }
+  
+  .pd-title-row h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #111;
+    line-height: 1.25;
+  }
+  
+  .pd-action-btns {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+  
+  .pd-icon-btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid #e5e7eb;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #222;
+    transition: all 0.2s;
+    position: relative;
+  }
+  
+  .pd-icon-btn:hover {
+    background: #f5f5f5;
+  }
+  
+  .pd-icon-btn.wishlisted {
+    border-color: #ef4444;
+    background: #fff5f5;
+  }
+  
+  /* SHARE DROPDOWN */
+  .pd-share-wrap {
+    position: relative;
+  }
+  
+  .pd-share-dropdown {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.10);
+    min-width: 160px;
+    z-index: 100;
+    overflow: hidden;
+  }
+  
+  .pd-share-dropdown a,
+  .pd-share-dropdown button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 14px;
+    color: #111;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.15s;
+  }
+  
+  .pd-share-dropdown a:hover,
+  .pd-share-dropdown button:hover {
+    background: #f3f4f6;
+  }
+  
+  /* RATING */
+  .pd-rating {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+  
+  .pd-rating span {
+    font-size: 14px;
+    color: #6b7280;
+    margin-left: 4px;
+  }
+  
+  /* PRICE */
+  .pd-price-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 4px;
+  }
+  
+  .pd-price-row h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #111;
+  }
+  
+  .pd-badge {
+    background: #d1fae5;
+    color: #065f46;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+  }
+  
+  .pd-tax-note {
+    font-size: 13px;
+    color: #9ca3af;
+    margin-bottom: 20px;
+  }
+  
+  .pd-divider {
+    border: none;
+    border-top: 1px solid #f0f0f0;
+    margin: 20px 0;
+  }
+  
+  /* COLOR */
+  .pd-color-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 15px;
+    color: #111;
+    margin-bottom: 6px;
+  }
+  
+  .pd-color-name {
+    font-size: 13px;
+    color: #6b7280;
+    margin-bottom: 12px;
+  }
+  
+  .pd-colors {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .pd-color-btn {
+    width: 64px;
+    height: 56px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: border-color 0.2s, transform 0.15s;
+  }
+  
+  .pd-color-btn.active {
+    border-color: #2563eb;
+    transform: scale(1.06);
+  }
+  
+  .pd-color-btn:hover {
+    border-color: #9ca3af;
+  }
+  
+  /* CTA */
+  .pd-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 4px;
+  }
+  
+  .pd-ar-btn {
+    width: 100%;
+    height: 52px;
+    border: 1.5px solid #e5e7eb;
+    border-radius: 14px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #111;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  
+  .pd-ar-btn:hover {
+    background: #f5f5f5;
+  }
+  
+  .pd-cart-btn {
+    width: 100%;
+    height: 52px;
+    border: none;
+    border-radius: 14px;
+    background: #2563eb;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+  }
+  
+  .pd-cart-btn:hover {
+    background: #1d4ed8;
+  }
+  
+  .pd-cart-btn.added {
+    background: #16a34a;
+  }
+  
+  /* ACCORDION */
+  .pd-accordion {
+    border-top: 1px solid #f0f0f0;
+  }
+  
+  .pd-accordion:last-child {
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .pd-accordion-head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: #111;
+    text-align: left;
+  }
+  
+  .pd-accordion-head small {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-left: 10px;
+  }
+  
+  .pd-accordion-head svg {
+    transition: transform 0.2s;
+    flex-shrink: 0;
+    color: #6b7280;
+  }
+  
+  .pd-accordion-head svg.rotated {
+    transform: rotate(90deg);
+  }
+  
+  .pd-accordion-body {
+    padding: 0 0 18px;
+    font-size: 14px;
+    color: #4b5563;
+    line-height: 1.7;
+  }
+  
+  /* NOT FOUND */
+  .pd-not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    gap: 20px;
+  }
+  
+  .pd-not-found button {
+    padding: 12px 28px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  
+ /* ============================================
+   PRODUCT DETAILS RESPONSIVE - TABLET
+============================================ */
+
+@media(max-width:1100px){
+
+  .pd-page{
+    padding:28px 35px 50px;
+  }
+
+  .pd-layout{
+    gap:38px;
+  }
+
+  .pd-title-row h1{
+    font-size:26px;
+  }
+
+  .pd-price-row h2{
+    font-size:32px;
+  }
+
+}
+
+
+/* ============================================
+   PRODUCT DETAILS RESPONSIVE - MOBILE
+============================================ */
+
+@media(max-width:900px){
+
+  .pd-page{
+    padding:22px 20px 45px;
+  }
+
+  .pd-layout{
+    grid-template-columns:1fr;
+    gap:30px;
+  }
+
+  .pd-right{
+    position:static;
+  }
+
+  .pd-title-row{
+    flex-direction:column;
+    gap:14px;
+  }
+
+  .pd-action-btns{
+    align-self:flex-start;
+  }
+
+  .pd-title-row h1{
+    font-size:26px;
+  }
+
+  .pd-price-row h2{
+    font-size:30px;
+  }
+
+  .pd-thumbs{
+    overflow-x:auto;
+    padding-bottom:6px;
+    scrollbar-width:none;
+  }
+
+  .pd-thumbs::-webkit-scrollbar{
+    display:none;
+  }
+
+  .pd-thumb{
+    flex:0 0 76px;
+  }
+
+}
+
+
+/* ============================================
+   PRODUCT DETAILS RESPONSIVE - SMALL PHONE
+============================================ */
+
+@media(max-width:480px){
+
+  .pd-page{
+    padding:18px 14px 35px;
+  }
+
+  .pd-back{
+    width:40px;
+    height:40px;
+    margin-bottom:20px;
+  }
+
+  .pd-main-img{
+    border-radius:16px;
+  }
+
+  .pd-title-row h1{
+    font-size:22px;
+  }
+
+  .pd-icon-btn{
+    width:40px;
+    height:40px;
+  }
+
+  .pd-price-row{
+    flex-wrap:wrap;
+  }
+
+  .pd-price-row h2{
+    font-size:28px;
+  }
+
+  .pd-colors{
+    overflow-x:auto;
+    padding-bottom:8px;
+    scrollbar-width:none;
+  }
+
+  .pd-colors::-webkit-scrollbar{
+    display:none;
+  }
+
+  .pd-color-btn{
+    flex:0 0 58px;
+    height:52px;
+  }
+
+  .pd-ar-btn,
+  .pd-cart-btn{
+    height:50px;
+    font-size:15px;
+  }
+
+  .pd-accordion-head{
+    font-size:15px;
+  }
+
+  .pd-accordion-head small{
+    display:block;
+    margin-left:0;
+    margin-top:4px;
+  }
+
+  .pd-description h3{
+    font-size:17px;
+  }
+
+  .pd-description p{
+    font-size:14px;
+  }
+
+}

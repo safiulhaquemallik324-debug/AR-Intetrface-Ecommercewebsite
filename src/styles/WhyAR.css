@@ -1,0 +1,261 @@
+.why-ar {
+    padding: 70px 55px 85px;
+    background: #fff;
+    text-align: center;
+  }
+  
+  .why-ar h2,
+  .how-ar h2 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 80px;
+  }
+  
+  .why-ar h2 span,
+  .how-ar h2 span {
+    color: #2f80ff;
+  }
+  
+  .why-grid,
+  .how-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 42px;
+  }
+  
+  .why-card {
+    height: 355px;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.06);
+    transition:0.3s ease;
+  }
+
+  .why-card:hover{
+    transform:translateY(-8px) scale(1.03);
+    border:1px solid #2f80ff;
+    box-shadow:0 20px 45px rgba(47,128,255,.18), 0 8px 25px rgba(0,0,0,.08);
+}
+  
+  .ar-icon {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    background: #367ff5;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ar-icon svg {
+    width: 30px;
+    height: 30px;
+    stroke-width: 2.3;
+  }
+  
+  .why-card h3,
+  .how-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #111;
+  }
+  
+  .why-card p,
+  .how-card p {
+    font-size: 13px;
+    color: #7b8494;
+    max-width: 190px;
+    line-height: 1.5;
+  }
+  
+  .how-ar {
+    position: relative;
+    padding: 55px 65px 95px;
+    background: linear-gradient(135deg, #1856b5, #0b459c);
+    text-align: center;
+  }
+  
+  .how-ar h2 {
+    color: white;
+    margin-bottom: 48px;
+  }
+  
+  .how-ar h2 span {
+    color: #000;
+  }
+  
+  .how-card {
+    height: 355px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.03);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    transition:0.3s ease;
+  }
+
+  .how-card:hover{
+    transform:translateY(-8px) scale(1.03);
+    border:1px solid rgba(255,255,255,.7);
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.25),
+        0 0 35px rgba(74,144,255,.35);
+    background:rgba(255,255,255,.06);
+}
+  
+  .how-card .ar-icon {
+    width: 80px;
+    height: 80px;
+    background: #3f8cff;
+  }
+  
+  .how-card h3 {
+    color: white;
+  }
+  
+  .how-card p {
+    color: rgba(255, 255, 255, 0.55);
+  }
+  
+  .try-btn {
+    margin-top: 43px;
+    float: right;
+    width: 145px;
+    height: 42px;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    color: #2f80ff;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all .35s ease;
+    text-decoration: none;
+  }
+  
+  .try-btn:hover{
+    transform: translateY(-6px);
+    background:#f3f8ff;
+    box-shadow:
+        0 18px 40px rgba(47,128,255,.30),
+        0 10px 25px rgba(0,0,0,.15);
+
+}
+
+
+.try-btn svg{
+    transition: all .35s ease;
+}
+
+.try-btn:hover svg{
+    transform: translateX(8px);
+}
+
+.why-card .ar-icon,
+.how-card .ar-icon{
+    transition:all .35s ease;
+}
+
+.why-card:hover .ar-icon,
+.how-card:hover .ar-icon{
+    transform:scale(1.12) rotate(8deg);
+    box-shadow:
+      0 12px 35px rgba(47,128,255,.35);
+}
+
+
+/* ==========================
+   WHY AR RESPONSIVE
+========================== */
+
+@media(max-width:1100px){
+  .why-ar{
+    padding:60px 35px 75px;
+  }
+
+  .how-ar{
+    padding:55px 35px 85px;
+  }
+
+  .why-grid,
+  .how-grid{
+    gap:24px;
+  }
+
+  .why-card,
+  .how-card{
+    height:320px;
+  }
+}
+
+@media(max-width:768px){
+  .why-ar,
+  .how-ar{
+    padding:50px 20px;
+  }
+
+  .why-ar h2,
+  .how-ar h2{
+    font-size:26px;
+    margin-bottom:40px;
+  }
+
+  .why-grid,
+  .how-grid{
+    grid-template-columns:1fr;
+    gap:22px;
+  }
+
+  .why-card,
+  .how-card{
+    height:auto;
+    min-height:260px;
+    padding:35px 20px;
+  }
+
+  .try-btn{
+    float:none;
+    margin:35px auto 0;
+  }
+}
+
+@media(max-width:480px){
+  .why-ar,
+  .how-ar{
+    padding:40px 15px;
+  }
+
+  .why-ar h2,
+  .how-ar h2{
+    font-size:22px;
+  }
+
+  .ar-icon{
+    width:66px;
+    height:66px;
+  }
+
+  .how-card .ar-icon{
+    width:68px;
+    height:68px;
+  }
+
+  .why-card p,
+  .how-card p{
+    max-width:240px;
+  }
+}

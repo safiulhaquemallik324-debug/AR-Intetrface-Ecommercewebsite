@@ -1,0 +1,479 @@
+/* ======================================================
+   NAVBAR
+====================================================== */
+
+.navbar{
+  width:100%;
+  background:#fff;
+  border-bottom:1px solid #eee;
+}
+
+
+/* ======================================================
+   TOP BAR
+====================================================== */
+
+.topbar{
+  width:100%;
+  height:34px;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:0 60px;
+
+  font-size:13px;
+}
+
+.location,
+.language{
+  display:flex;
+  align-items:center;
+  gap:5px;
+}
+
+
+/* ======================================================
+   MAIN NAV
+====================================================== */
+
+.nav-container{
+  width:100%;
+  height:72px;
+
+  display:flex;
+  align-items:center;
+
+  padding:0 24px;
+
+  gap:25px;
+}
+
+
+/* ======================================================
+   LOGO
+====================================================== */
+
+.logo{
+
+  text-decoration:none;
+
+  font-size:32px;
+  font-weight:700;
+
+  color:#111;
+
+  flex-shrink:0;
+}
+
+.blue{
+  color:#2563eb;
+}
+
+
+/* ======================================================
+   MENU
+====================================================== */
+
+.menu{
+  display:flex;
+  align-items:center;
+  gap:26px;
+
+  margin-left:0;
+}
+
+
+.menu a{
+
+  position:relative;
+
+  text-decoration:none;
+
+  color:#111;
+
+  font-size:16px;
+  font-weight:500;
+
+  padding-bottom:6px;
+}
+
+.menu a::after{
+
+  content:"";
+
+  position:absolute;
+
+  left:0;
+  bottom:0;
+
+  width:100%;
+  height:3px;
+
+  background:#facc15;
+
+  border-radius:10px;
+
+  transform:scaleX(0);
+  transform-origin:left;
+
+  transition:transform .3s ease;
+}
+
+.menu a:hover::after,
+.menu a.active::after{
+
+  transform:scaleX(1);
+}
+
+.menu a:hover{
+  color:#000;
+}
+
+
+/* ======================================================
+   SEARCH BOX
+====================================================== */
+
+.search-box{
+
+  width:260px;
+  margin-left:auto;
+  flex-shrink:1;
+  height:42px;
+  background:#f3f4f6;
+  border-radius:50px;
+  display:flex;
+  align-items:center;
+  padding:0 15px;
+  transition:.3s ease;
+}
+
+.search-box input{
+
+  width:100%;
+
+  border:none;
+  outline:none;
+
+  background:transparent;
+
+  padding-left:10px;
+
+  font-size:15px;
+}
+
+.search-box:focus-within{
+
+  border:1px solid #d1d5db;
+
+  background:#fff;
+
+  box-shadow:0 0 0 3px rgba(59,130,246,.1);
+}
+
+
+/* ======================================================
+   ICONS
+====================================================== */
+
+.icons{
+  display:flex;
+  align-items:center;
+
+  gap:22px;
+
+  margin-left:0;
+
+  flex-shrink:0;
+}
+
+.icon-btn{
+
+  position:relative;
+
+  display:flex;
+  align-items:center;
+
+  text-decoration:none;
+
+  color:#222;
+
+  cursor:pointer;
+
+  transition:.3s ease;
+}
+
+.icon-btn:hover{
+
+  color:#2563eb;
+
+  transform:translateY(-2px) scale(1.12);
+}
+
+.icon-btn:first-child:hover{
+  color:#ef4444;
+}
+
+
+/* ======================================================
+   NOTIFICATION COUNT
+====================================================== */
+
+.nav-count{
+
+  position:absolute;
+
+  top:-9px;
+  right:-10px;
+
+  min-width:18px;
+  height:18px;
+
+  padding:0 5px;
+
+  border-radius:50%;
+
+  background:#ef4444;
+
+  color:#fff;
+
+  font-size:11px;
+  font-weight:700;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+
+/* ======================================================
+   LOGIN
+====================================================== */
+
+.login{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:8px;
+
+  font-size:15px;
+
+  white-space:nowrap;
+}
+
+
+/* ======================================================
+   LANGUAGE SELECT
+====================================================== */
+
+.language-select{
+
+  position:relative;
+
+  display:flex;
+  align-items:center;
+
+  gap:4px;
+
+  height:30px;
+
+  padding:0 10px;
+
+  border:none;
+
+  border-radius:20px;
+
+  background:#f5f5f5;
+
+  cursor:pointer;
+}
+
+.language-select select{
+
+  width:100%;
+
+  border:none;
+  outline:none;
+
+  background:transparent;
+
+  font-size:13px;
+  font-weight:500;
+
+  cursor:pointer;
+
+  appearance:none;
+
+  padding-right:20px;
+}
+
+.language-select svg{
+
+  position:absolute;
+
+  right:8px;
+  top:50%;
+
+  transform:translateY(-50%);
+
+  pointer-events:none;
+}
+
+.language-select:focus-within{
+
+  background:#fff;
+
+  box-shadow:0 0 0 3px rgba(37,99,235,.12);
+}
+
+/* ======================================================
+   HAMBURGER
+====================================================== */
+
+.hamburger{
+  display:none;
+  border:none;
+  background:none;
+  cursor:pointer;
+  color:#111;
+  transition: 0.3s ease;
+}
+
+
+
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+@media(max-width:768px){
+  .topbar{
+    display:none;
+  }
+
+  .nav-container{
+    height:70px;
+    padding:0 16px;
+    gap:14px;
+    position:relative;
+  }
+
+  .hamburger{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+  }
+
+  .logo{
+    font-size:24px;
+    margin-right:auto;
+  }
+
+  .menu{
+    position:absolute;
+    top:70px;
+    left:0;
+    width:100%;
+    margin-left:0;
+    padding:20px;
+    background:#fff;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:18px;
+    border-top:1px solid #eee;
+    box-shadow:0 18px 35px rgba(0,0,0,.12);
+    display:none;
+    z-index:999;
+  }
+
+  .menu.show-menu{
+    display:flex;
+  }
+
+  .search-box{
+    width:150px;
+    height:38px;
+    margin-left:0;
+    padding:0 10px;
+  }
+
+  .search-box input{
+    font-size:13px;
+  }
+
+  .icons{
+    margin-left:0;
+    gap:16px;
+  }
+
+  .login{
+    display:flex;
+  }
+  
+  .login span{
+    display:none;
+  }
+}
+
+@media(max-width:480px){
+  .search-box{
+    width:105px;
+  }
+
+  .icons{
+    gap:12px;
+  }
+
+  .logo{
+    font-size:21px;
+  }
+}
+
+@media (max-width:1200px){
+
+  .nav-container{
+    padding:0 20px;
+    gap:14px;
+  }
+
+  .logo{
+    font-size:28px;
+  }
+
+  .menu{
+    gap:18px;
+  }
+
+  .menu a{
+    font-size:14px;
+  }
+
+  .search-box{
+    width:180px;
+  }
+
+  .icons{
+    gap:14px;
+  }
+
+  .login span{
+    display:none;
+  }
+
+}
+@media (max-width:1024px){
+
+  .search-box{
+      width:150px;
+  }
+
+  .icons{
+      gap:10px;
+  }
+
+}

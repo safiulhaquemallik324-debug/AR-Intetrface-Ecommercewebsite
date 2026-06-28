@@ -1,0 +1,48 @@
+import lamp from "../assets/Lamp.png";
+
+export const heroSlides = [
+    {
+      id: 1,
+      title: "Fior 3 Seater Sofa",
+      subtitle: "Premium Comfort for your Living Room",
+      price: "24,999",
+      discount: "17",
+      rating: 4.5,
+      reviews: 120,
+      image: "https://pngimg.com/uploads/sofa/sofa_PNG6926.png",
+      bg: "#d8d3cd",
+    },
+    {
+      id: 2,
+      title: "Wooden Chair",
+      subtitle: "Elegant Chair for Modern Homes",
+      price: "8,999",
+      discount: "10",
+      rating: 4.7,
+      reviews: 80,
+      image: "https://pngimg.com/uploads/chair/chair_PNG6844.png",
+      bg: "#efe1d1",
+    },
+    {
+      id: 3,
+      title: "Modern Lamp",
+      subtitle: "Light up your cozy corner",
+      price: "3,499",
+      discount: "15",
+      rating: 4.6,
+      reviews: 95,
+      image: lamp,
+      bg: "#e9e4d8",
+    },
+    {
+      id: 4,
+      title: "Running Shoes",
+      subtitle: "Comfort for your everyday steps",
+      price: "3,999",
+      discount: "20",
+      rating: 4.8,
+      reviews: 140,
+      image: "https://pngimg.com/uploads/running_shoes/running_shoes_PNG5813.png",
+      bg: "#e8edf5",
+    },
+  ];
