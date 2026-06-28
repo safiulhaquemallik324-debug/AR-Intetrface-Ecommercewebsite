@@ -101,7 +101,7 @@ export default function ARViewer() {
     <div className="ar-viewer-page" ref={pageRef}>
       <model-viewer
         ref={modelRef}
-        src="/models/sofa.glb"
+        src={`${import.meta.env.BASE_URL}models/sofa.glb`}
         ar
         ar-modes="webxr scene-viewer quick-look"
         camera-controls

@@ -43,7 +43,7 @@ function Wishlist() {
         <section className="wishlist-page">
             <button
                 className="wishlist-back"
-                onClick={() => window.location.href = "/"}
+                onClick={() => navigate("/")}
             >
                 <ArrowLeft size={20} />
                 Back to Home
